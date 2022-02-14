@@ -7,7 +7,7 @@
 This is a solution to the [Frontend Mentor](https://www.frontendmentor.io) challenge to recreate the [Huddle landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).  Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Link to deployed Site
-[Huddle landing page](https://friendly-benz-de5b74.netlify.app/)
+[Huddle landing page](https://distracted-davinci-033bd1.netlify.app/)
 
 ## Table of contents
 
@@ -50,7 +50,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [distracted-davinci-033bd1.netlify.app/](https://distracted-davinci-033bd1.netlify.app/)
 
 ## My process
 
