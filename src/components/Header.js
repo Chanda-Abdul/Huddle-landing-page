@@ -1,4 +1,4 @@
-import { StyledHeader, Nav, Logo, Image } from "./styles/Header.styled";
+import { StyledHeader, StyledButton,  StyledHero, Nav, Logo, Image } from "./styles/Header.styled";
 import { Button } from "./styles/Button.styled";
 import { Flex } from "./styles/Flex.styled";
 
@@ -9,11 +9,12 @@ export default function Header() {
     <StyledHeader>
       <Container>
         <Nav>
-          <Logo src="./images/logo.svg" alt="" />
-          <Button>Try It Free</Button>
+          <Logo src="./images/logo.svg" alt="header-logo" />
+          <StyledButton>Try It Free</StyledButton>
+          
         </Nav>
         <Flex>
-          <div>
+          < StyledHero>
             <h1>Build The Community Your Fans Will Love</h1>
 
             <p>
@@ -22,7 +23,7 @@ export default function Header() {
               you engage in genuine discussion.
             </p>
             <Button bg='#ff0099' color='white'>Get Started For Free</Button>
-          </div>
+          </ StyledHero>
           <Image src='./images/illustration-mockups.svg' alt=''/>
         </Flex>
       </Container>

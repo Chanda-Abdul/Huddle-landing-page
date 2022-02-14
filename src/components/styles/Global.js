@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.body};
     color: hsl(192, 100%, 9%);
     font-family: 'Poppins', sans-serif;
-    font-size: 1.15em;
+    // font-size: 1.15em;
     margin: 0;
   }
   p {
@@ -19,6 +19,12 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
 }
+
+@media (max-width: ${({ theme }) => theme.mobile}) {
+  font-size: 12px;
+}
+
+
 `;
 
 export default GlobalStyles;
