@@ -6,13 +6,21 @@ import GlobalStyles from "./components/styles/Global";
 import Card from "./components/Card";
 import content from './content'
 import Footer from "./components/Footer";
+import { CallToActionStyled } from "./components/styles/CallToAction.styled";
+import CallToAction from "./components/CallToAction";
+
+
 const theme = {
-  colors: {
-    header: "#ebfbff",
-    body: "#fff",
-    footer: "#003333",
-  },
+  // colors: {
+  //   header: "#ebfbff",
+  //   body: "#fff",
+  //   footer: "#003333",
+  // },
+
+
   mobile: "375px",
+  tablet: "768px",
+  desktop: "1440px"
 };
 
 function App() {
@@ -25,6 +33,7 @@ function App() {
           {content.map((item, index) => (
             <Card key={index} item={item}/>
           ))}
+          <CallToAction/>
         </Container>
         <Footer/>
       </>

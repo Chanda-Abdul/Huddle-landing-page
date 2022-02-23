@@ -6,14 +6,18 @@ import { Container } from "./styles/Container.styled";
 
 export default function Header() {
   return (
+    <>
     <StyledHeader>
-      <Container>
+     
         <Nav>
           <Logo src="./images/logo.svg" alt="header-logo" />
           <StyledButton>Try It Free</StyledButton>
           
         </Nav>
+        
+        <Container>
         <Flex>
+        
           < StyledHero>
             <h1>Build The Community Your Fans Will Love</h1>
 
@@ -22,11 +26,12 @@ export default function Header() {
               but so does your audience. Create connections with your users as
               you engage in genuine discussion.
             </p>
-            <Button bg='#ff0099' color='white'>Get Started For Free</Button>
+            <Button bg="var(--pink)" color="var(--very-pale-cyan)">Get Started For Free</Button>
           </ StyledHero>
           <Image src='./images/illustration-mockups.svg' alt=''/>
         </Flex>
       </Container>
-    </StyledHeader>
+      </StyledHeader>
+      </>
   );
 }
