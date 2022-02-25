@@ -32,26 +32,30 @@ export default function Footer() {
           <ul className="links">
             <div className="link">
               <li>
-                <a href 
-                ="#"
-      >About Us</a>
+              {/* eslint-disable-next-line */}
+                <a href ="#">About Us</a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
                 <a href ="#">What We Do</a>
               </li>
               <li>
+             {/* eslint-disable-next-line */}
                 <a href ="#">FAQ</a>
               </li>
             </div>
 
             <div className="link">
               <li>
+               {/* eslint-disable-next-line */}
                 <a href ="#">Career</a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
                 <a href ="#">Blog</a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
                 <a href ="#">Contact Us</a>
               </li>
             </div>

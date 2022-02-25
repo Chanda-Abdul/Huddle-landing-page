@@ -1,13 +1,12 @@
-# Frontend Mentor - [Huddle landing page](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100)
+# Frontend Mentor  ⇒ [Huddle landing page](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100)
 
 ![Design preview for the Huddle landing page coding challenge](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/efl9yt2c7gpgn2ezgeo7.jpg)
 
 
 ## Summary
-This is a solution to the [Frontend Mentor](https://www.frontendmentor.io) challenge to recreate the [Huddle landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).  Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Frontend Mentor](https://www.frontendmentor.io) challenge to recreate the [Huddle landing page](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).  Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Link to deployed Site
-[Huddle landing page](https://distracted-davinci-033bd1.netlify.app/)
+I built this project to practice React and React Styled Components.
 
 ## Table of contents
 
@@ -50,7 +49,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [distracted-davinci-033bd1.netlify.app/](https://distracted-davinci-033bd1.netlify.app/)
+- Live Site URL: [https://distracted-davinci-033bd1.netlify.app/](https://distracted-davinci-033bd1.netlify.app/)
+
 
 ## My process
 
