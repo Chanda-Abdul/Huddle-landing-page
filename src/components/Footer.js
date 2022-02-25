@@ -1,4 +1,3 @@
-
 import { Container } from "./styles/Container.styled";
 import { StyledFooter, Logo, Image } from "./styles/Footer.styled";
 import SocialIcons from "./SocialIcons";
@@ -29,37 +28,39 @@ export default function Footer() {
             </li>
           </ul>
 
-          <ul className="links">
-            <div className="link">
+          <div className="link">
+            <ul className="links">
               <li>
-              {/* eslint-disable-next-line */}
-                <a href ="#">About Us</a>
+                {/* eslint-disable-next-line */}
+                <a href="#">About Us</a>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-                <a href ="#">What We Do</a>
+                {/* eslint-disable-next-line */}
+                <a href="#">What We Do</a>
               </li>
               <li>
-             {/* eslint-disable-next-line */}
-                <a href ="#">FAQ</a>
+                {/* eslint-disable-next-line */}
+                <a href="#">FAQ</a>
               </li>
-            </div>
+            </ul>
+          </div>
 
-            <div className="link">
+          <div className="link">
+            <ul>
               <li>
-               {/* eslint-disable-next-line */}
-                <a href ="#">Career</a>
+                {/* eslint-disable-next-line */}
+                <a href="#">Career</a>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-                <a href ="#">Blog</a>
+                {/* eslint-disable-next-line */}
+                <a href="#">Blog</a>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-                <a href ="#">Contact Us</a>
+                {/* eslint-disable-next-line */}
+                <a href="#">Contact Us</a>
               </li>
-            </div>
-          </ul>
+            </ul>
+          </div>
 
           <div className="end">
             <SocialIcons />

@@ -6,8 +6,8 @@ import { Container } from "./styles/Container.styled";
 export default function Header() {
   return (
     <>
-      <StyledHeader>
-        <Nav>
+      <StyledHeader role="banner">
+        <Nav role="navigation">
           <Logo src="./images/logo.svg" alt="header-logo" />
           <StyledButton>Try It Free</StyledButton>
         </Nav>

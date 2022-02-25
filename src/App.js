@@ -24,13 +24,13 @@ function App() {
           <Routes>
             <Route path="/" element={<App />} /> */}
             <Header />
-            <Container>
+            <Container role="main">
               {content.map((item, index) => (
                 <Card key={index} item={item} />
               ))}
               <CallToAction />
             </Container>
-            <Footer />
+            <Footer role="contentinfo"/>
           {/* </Routes>
         </Router> */}
       </>
