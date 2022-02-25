@@ -82,10 +82,7 @@ export const StyledFooter = styled.footer`
       width: 25%;
       padding: 0;
     }
-    div .link {
-      display: flex;
-      flex-direction: column;
-    }
+   
     .end {
       display: flex;
       flex-direction: column;

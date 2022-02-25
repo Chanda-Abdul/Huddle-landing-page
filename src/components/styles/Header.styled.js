@@ -140,17 +140,17 @@ export const StyledHero = styled.div`
     margin: 25px 75px;
 
     .hero-text {
-      width: 60%;
+      width: 30%;
     }
 
     h1 {
-      width: 60%;
+      width: 40%;
       font-size: 2.25rem;
       line-height: 2.5rem;
     }
     p {
-      width: 50%;
-      font-size: 1rem;
+      max-width: 50%;
+      font-size: 1.25rem;
     }
   }
 `;
@@ -162,11 +162,11 @@ export const Image = styled.img`
   }
 
   @media (min-width: ${({ theme }) => theme.tablet}) {
-    width: 50%;
+    width: 60%;
   }
 
   @media (min-width: ${({ theme }) => theme.desktop}) {
-    width: 40%;
-    padding: 25px;
+    width: 50%;
+    /* padding: 25px; */
   }
 `;

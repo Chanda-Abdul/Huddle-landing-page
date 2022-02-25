@@ -29,7 +29,7 @@ export default function Footer() {
           </ul>
 
           <div className="link">
-            <ul className="links">
+            <ul >
               <li>
                 {/* eslint-disable-next-line */}
                 <a href="#">About Us</a>
