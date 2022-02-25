@@ -8,10 +8,15 @@ h3,
 h4,
 h5,
 h6 {
-  @include heading();
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: var(--very-dark-cyan);
 }
 body {
-  @include body();
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--very-dark-cyan);
   background: #fff;
   font-size: 1.15em;
   margin: 0;

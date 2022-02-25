@@ -10,7 +10,10 @@ export const CallToActionStyled = styled.div`
   padding: 20px 10px;
   background-color: ${({ bg }) => bg || "#fff"};
   color: ${({ color }) => color || "var(--very-dark-cyan)"};
-  @include call-to-action();
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--grayish-blue);
 
   h2 {
     font-size: 1.1rem;
@@ -27,7 +30,11 @@ export const CallToActionStyled = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.desktop}) {
-    max-width: 25vw;
-    margin: 5px 15vw;
+    max-width: 50%;
+    margin: 5px 25vw;
+
+    button {
+      max-width: 50%;
+  }
   }
 `;

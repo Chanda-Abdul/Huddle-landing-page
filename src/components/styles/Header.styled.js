@@ -29,7 +29,13 @@ export const Nav = styled.nav`
 
 export const Logo = styled.img`
   @media (min-width: ${({ theme }) => theme.mobile}) {
+    width: 35vw;
+  }
+  @media (min-width: ${({ theme }) => theme.tablet}) {
     width: 25vw;
+  }
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    width: 15vw;
   }
 `;
 
@@ -46,10 +52,15 @@ export const StyledButton = styled.button`
   color: ${({ color }) => color || "var(--very-dark-cyan)"};
 
   &:hover {
-    opacity: 0.50;
+    opacity: 0.5;
     transform: scale(0.95);
     background-color: var(--pink);
     color: var(--very-pale-cyan);
+  }
+
+  @media (min-width: ${({ theme }) => theme.tablet}) {
+    padding: 10px 40px;
+    font-size: 0.75rem;
   }
 `;
 
@@ -58,6 +69,7 @@ export const StyledHero = styled.div`
   justify-content: space-around;
   align-items: center;
   max-width: 100%;
+  margin-top: 50px;
 
   @media (min-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
@@ -72,15 +84,16 @@ export const StyledHero = styled.div`
       color: ${({ color }) => color || "var(--very-dark-cyan)"};
     }
     p {
-      @include call-to-action();
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
       padding: 10px;
       font-size: 1rem;
-      margin: 10px ;
+      margin: 10px;
       text-align: center;
     }
     button {
       align-self: center;
-      margin: 30px 60px ;
+      margin: 30px 60px;
     }
   }
   @media (min-width: ${({ theme }) => theme.tablet}) {
@@ -96,19 +109,19 @@ export const StyledHero = styled.div`
       padding: 25px 0;
     }
     h1 {
-      width: 75%;
+      width: 100%;
       padding: 20px 0 0 0;
-      font-size: 1.5rem;
-      line-height: 2.25rem;
+      font-size: 1.75rem;
+      line-height: 2rem;
       margin: 0;
       text-align: left;
       color: ${({ color }) => color || "var(--very-dark-cyan)"};
     }
     p {
       @include call-to-action();
-      width: 75%;
+      width: 90%;
       padding: 10px 0;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       margin: 10px 0;
       text-align: left;
     }
@@ -116,8 +129,28 @@ export const StyledHero = styled.div`
       text-align: left;
       align-self: left;
       margin: 0 auto 0 0;
-      font-size: 0.65rem;
+      font-size: 0.75rem;
       width: fit-content;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 75px;
+
+    .hero-text {
+      width: 60%;
+    }
+
+    h1 {
+      width: 60%;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+    p {
+      width: 50%;
+      font-size: 1rem;
     }
   }
 `;
@@ -130,5 +163,10 @@ export const Image = styled.img`
 
   @media (min-width: ${({ theme }) => theme.tablet}) {
     width: 50%;
+  }
+
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    width: 40%;
+    padding: 25px;
   }
 `;
