@@ -99,28 +99,29 @@ export const StyledHero = styled.div`
   @media (min-width: ${({ theme }) => theme.tablet}) {
     flex-direction: row;
     justify-content: space-around;
-    margin: 25px 0;
+    align-items: center;
+    margin: 50px 0;
 
     .hero-text {
       display: flex;
       flex-direction: column;
       width: 50%;
       align-items: left;
-      padding: 25px 0;
+      padding: 50px 0;
     }
     h1 {
-      width: 100%;
-      padding: 20px 0 0 0;
-      font-size: 1.75rem;
+      width: 90%;
+      padding: 50px 0 0 0;
+      font-size: 1.5rem;
       line-height: 2rem;
       margin: 0;
       text-align: left;
       color: ${({ color }) => color || "var(--very-dark-cyan)"};
     }
     p {
-      @include call-to-action();
+     
       width: 90%;
-      padding: 10px 0;
+      padding: 10px 0 30px 0;
       font-size: 0.85rem;
       margin: 10px 0;
       text-align: left;
@@ -163,10 +164,11 @@ export const Image = styled.img`
 
   @media (min-width: ${({ theme }) => theme.tablet}) {
     width: 60%;
+    padding: 10px;
   }
 
   @media (min-width: ${({ theme }) => theme.desktop}) {
     width: 50%;
-    /* padding: 25px; */
+    padding: 25px;
   }
 `;

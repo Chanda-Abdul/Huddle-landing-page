@@ -30,8 +30,8 @@ export const CallToActionStyled = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.desktop}) {
-    max-width: 50%;
-    margin: 5px 25vw;
+    max-width: 40%;
+    margin: 5px 30vw;
 
     button {
       max-width: 50%;
