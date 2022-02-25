@@ -15,21 +15,18 @@ body {
   background: #fff;
   font-size: 1.15em;
   margin: 0;
-
-  
  }
 
- 
- 
  p {
    line-height: 1.5;
   }
-
-  .cta{
-    @include call-to-action();
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    font-size: 24px;
   }
-  
 
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    font-size: 32px;
+  }
     
 `;
 

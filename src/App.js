@@ -1,26 +1,18 @@
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import "./App.css";
-import Header from "./components/Header";
-import { Container } from "./components/styles/Container.styled";
 import GlobalStyles from "./components/styles/Global";
+import { Container } from "./components/styles/Container.styled";
+import Header from "./components/Header";
 import Card from "./components/Card";
-import content from './content'
 import Footer from "./components/Footer";
-import { CallToActionStyled } from "./components/styles/CallToAction.styled";
 import CallToAction from "./components/CallToAction";
-
+import content from "./content";
+import "./App.css";
 
 const theme = {
-  // colors: {
-  //   header: "#ebfbff",
-  //   body: "#fff",
-  //   footer: "#003333",
-  // },
-
-
   mobile: "375px",
   tablet: "768px",
-  desktop: "1440px"
+  desktop: "1440px",
 };
 
 function App() {
@@ -28,14 +20,19 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <Header />
-        <Container>
-          {content.map((item, index) => (
-            <Card key={index} item={item}/>
-          ))}
-          <CallToAction/>
-        </Container>
-        <Footer/>
+        {/* <Router>
+          <Routes>
+            <Route path="/" element={<App />} /> */}
+            <Header />
+            <Container>
+              {content.map((item, index) => (
+                <Card key={index} item={item} />
+              ))}
+              <CallToAction />
+            </Container>
+            <Footer />
+          {/* </Routes>
+        </Router> */}
       </>
     </ThemeProvider>
   );

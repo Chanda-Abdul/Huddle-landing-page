@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  padding: 10px 10px 20px 10px;
+  padding: 10px;
   margin: 0 0 100px 0;
-  
   background-color: var(--very-pale-cyan);
   background-size: contain;
 
@@ -35,7 +34,7 @@ export const Logo = styled.img`
 `;
 
 export const StyledButton = styled.button`
-  padding: 10px 20px;
+  padding: 5px 20px;
   margin: 0;
   border-radius: 50px;
   border: none;
@@ -47,19 +46,23 @@ export const StyledButton = styled.button`
   color: ${({ color }) => color || "var(--very-dark-cyan)"};
 
   &:hover {
-    opacity: 0.9;
-    transform: scale(0.98);
+    opacity: 0.50;
+    transform: scale(0.95);
+    background-color: var(--pink);
+    color: var(--very-pale-cyan);
   }
 `;
 
 export const StyledHero = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center
-max-width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
 
   @media (min-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    justify-content: space-around;
+
     h1 {
       padding: 20px;
       font-size: 1.5rem;
@@ -67,39 +70,65 @@ max-width: 100vw;
       margin: 0;
       text-align: center;
       color: ${({ color }) => color || "var(--very-dark-cyan)"};
-
     }
     p {
       @include call-to-action();
-      padding: 5px;
+      padding: 10px;
       font-size: 1rem;
-      margin: 10px 0;
+      margin: 10px ;
       text-align: center;
     }
-    
+    button {
+      align-self: center;
+      margin: 30px 60px ;
+    }
+  }
+  @media (min-width: ${({ theme }) => theme.tablet}) {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 0;
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      align-items: left;
+      padding: 25px 0;
+    }
+    h1 {
+      width: 75%;
+      padding: 20px 0 0 0;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin: 0;
+      text-align: left;
+      color: ${({ color }) => color || "var(--very-dark-cyan)"};
+    }
+    p {
+      @include call-to-action();
+      width: 75%;
+      padding: 10px 0;
+      font-size: 0.75rem;
+      margin: 10px 0;
+      text-align: left;
+    }
+    button {
+      text-align: left;
+      align-self: left;
+      margin: 0 auto 0 0;
+      font-size: 0.65rem;
+      width: fit-content;
+    }
   }
 `;
 
 export const Image = styled.img`
-  max-width: 90%;
-  margin: 40px;
-
   @media (min-width: ${({ theme }) => theme.mobile}) {
-    margin: 40px 0 30px;
+    width: 90%;
+    margin: 10px 10px;
+  }
+
+  @media (min-width: ${({ theme }) => theme.tablet}) {
+    width: 50%;
   }
 `;
-
-
-
-//   @media (max-width: ${({ theme }) => theme.mobile}) {
-//     font-size: 0.75rem;
-//     padding: 0.5rem 1.5rem;
-//     margin-bottom: 40px;
-//   }
-// `;
-
-
-
-//   @media (max-width: ${({ theme }) => theme.desktop}) {
-//     background-image: url("./images/bg-hero-desktop.svg");
-//    }
