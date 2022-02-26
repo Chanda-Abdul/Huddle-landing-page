@@ -22,23 +22,27 @@ I built this project to practice React and React Styled Components.
 - [Author](#author)
 
 
-## Overview
+# Overview
 
-### The challenge
+## The challenge
 
 #### Users should be able to:
 
 - [x] View the optimal layout for each page depending on their device's screen size
-  - [x] Mobile @ 375px
-   ![](./design/mobile-design.jpg)
-  - [x] Tablet @ 768px
-  - [x] Desktop @ 1275px
-   ![](./design/desktop-design.jpg)
-    ![](./design/desktop-preview.jpg)
-- See hover states for all interactive elements throughout the site
-  - [x] Button background-color and transform updates on hover state
-  - [x] Links color updates on hover
-  ![](./design/active-states.jpg)
+  - [x] Mobile @ <b>375px</b>
+  <img src="./design/mobile-design.jpg" alt="" width="300"/>
+ 
+  - [x] <b>Tablet</b> @ <b>768px</b>
+  - [x] Desktop <b>@ 1275px</b>
+
+    <img src="./design/desktop-design.jpg" alt="" width="300"/>
+
+     <img src="./design/desktop-preview.jpg" alt="" width="300"/>
+- See <b>hover</b> states for all interactive elements throughout the site
+  - [x] <b>Button</b> background-color and transform updates on hover state
+  - [x] <b>Links</b> color updates on hover
+     <img src="../design/active-states.jpg" alt="" width="300"/>
+
 
 
 ### Screenshot
