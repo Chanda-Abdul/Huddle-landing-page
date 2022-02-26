@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const CallToActionStyled = styled.div`
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   width: 90vw;
   border-radius: 15px;
@@ -23,6 +26,7 @@ export const CallToActionStyled = styled.div`
   button {
     font-size: 0.75rem;
     padding: 15px 50px;
+    width: 50%;
   }
   @media (min-width: ${({ theme }) => theme.tablet}) {
     width: 70vw;

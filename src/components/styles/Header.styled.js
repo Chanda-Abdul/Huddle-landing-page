@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
   margin: 0 0 100px 0;
   background-color: var(--very-pale-cyan);
   background-size: contain;
+  /* width: 100%; */
 
   @media (min-width: ${({ theme }) => theme.mobile}) {
     background-image: url("./images/bg-hero-mobile.svg");
@@ -41,7 +42,7 @@ export const Logo = styled.img`
 
 export const StyledButton = styled.button`
   padding: 5px 20px;
-  margin: 0;
+  /* margin: 0; */
   border-radius: 50px;
   border: none;
   box-shadow: 0 0 10px var(--grayish-blue);
@@ -66,7 +67,7 @@ export const StyledButton = styled.button`
 
 export const StyledHero = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   max-width: 100%;
   margin-top: 50px;
@@ -74,6 +75,7 @@ export const StyledHero = styled.div`
   @media (min-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 
     h1 {
       padding: 20px;
@@ -91,10 +93,7 @@ export const StyledHero = styled.div`
       margin: 10px;
       text-align: center;
     }
-    button {
-      align-self: center;
-      margin: 30px 60px;
-    }
+   
   }
   @media (min-width: ${({ theme }) => theme.tablet}) {
     flex-direction: row;
@@ -131,7 +130,7 @@ export const StyledHero = styled.div`
       align-self: left;
       margin: 0 auto 0 0;
       font-size: 0.75rem;
-      width: fit-content;
+      width: auto;
     }
   }
 
@@ -141,17 +140,17 @@ export const StyledHero = styled.div`
     margin: 25px 75px;
 
     .hero-text {
-      width: 30%;
+      width: 50%;
     }
 
     h1 {
-      width: 40%;
-      font-size: 2.25rem;
+      min-width: 20%;
+      font-size: 2.5rem;
       line-height: 2.5rem;
     }
     p {
-      max-width: 50%;
-      font-size: 1.25rem;
+      max-width: 75%;
+      font-size: 1.5rem;
     }
   }
 `;

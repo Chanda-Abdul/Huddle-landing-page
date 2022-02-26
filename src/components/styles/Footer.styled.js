@@ -21,6 +21,11 @@ export const StyledFooter = styled.footer`
     margin: 0 15px 0 0;
     padding: 5px 0;
   }
+  .contact {
+    padding: 20px 0;
+    max-width: 60%;
+  }
+
 
   a {
     color: #fff;
@@ -71,7 +76,7 @@ export const StyledFooter = styled.footer`
       flex-direction: column;
       width: 30%;
       margin: 10px 0;
-      padding: 0 20px 0 0;
+      padding: 0 20px;
     }
     .links {
       display: flex;
