@@ -6,19 +6,18 @@
 
 This is a solution to the [Frontend Mentor](https://www.frontendmentor.io) challenge to recreate the [Huddle landing page](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-I built this project to practice React and React Styled Components.
+I built this project to get more practice with <b>React</b> and <b>React Styled Components</b>.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 # Overview
@@ -31,21 +30,21 @@ I built this project to practice React and React Styled Components.
   - [x] <b>Mobile</b> @ 375px
   - [x] <b>Tablet</b> @ 768px
   - [x] <b>Desktop</b> @ 1275px
-- [x]See <b>hover</b> states for all interactive elements throughout the site
+- [x] See <b>hover</b> states for all interactive elements throughout the site
   - [x] <b>Button</b> `background-color` and `transform` updates on <b>hover</b>
   - [x] <b>Links</b> `color` updates on <b>hover</b>
         
 ## Screenshots
 
-#### Mobile @ <b>375px</b>
+### Mobile @ <b>375px</b>
 
 <img src="./design/mobile-design.jpg" alt="" width="300"/>
 
-#### Desktop @ <b>1275px</b>
+### Desktop @ <b>1275px</b>
 
 <img src="./design/desktop-design.jpg" alt="" width="400"/>
  
-#### <b>Hover States</b>
+### <b>Hover States</b>
 
 <img src="./design/active-states.jpg" alt="" width="400"/>
 
@@ -73,15 +72,15 @@ I built this project to practice React and React Styled Components.
 
 - The main motivation for completing this project was to get more practice with [React Styled Components](https://styled-components.com/).  I feel very comfortable with [React Styled Components](https://styled-components.com/) at this point, it's a great way to organize <b>CSS</b> styling within <b>React</b>.
 
-- An <b>interesting snippet</b> of code from this project is the code that I used to <b>dynamically render</b> the card <b>content</b>. In Mobile view the `image` within the `<Card/>` is rendered on the top and the `text` is rendered underneath.  But on the <b>Desktop</b> view the `image` and the `text` are rendered on the same line, but would alternate left/right positions with each `<Card/>` 
-  - So in `Card.styled.js`I used 
+- An <b>interesting snippet</b> of code from this project is the code that I used to <b>dynamically render</b> the <b>`<Card/>`content</b>. In Mobile view the `image` within the `<Card/>` is rendered on the top and the `text` is rendered underneath.  <i>But</i> on the <b>Desktop</b> view the `image` and the `text` are rendered on the same line, and alternate left/right positions within each `<Card/>` 
+  - So in `Card.styled.js` I used 
   ````
   @media (min-width: ${({ theme }) => theme.tablet}) {
       flex-direction: ${({ layout }) => layout || "row-reverse"};
       ...
   }
   ````
-  - and in `<Card/>` I alternated the ` flex-direction` based on the card `id` using
+  - and in `<Card/>` I alternated the `flex-direction` based on the card `id` using
   ````
   <StyledCard layout={id % 2 === 0 && "row"}>
   ````
@@ -92,35 +91,19 @@ I built this project to practice React and React Styled Components.
 
 ### Continued development
 
-- [ ] Add components for all of the links
+- [ ] Add <b>components</b> for all of the <b>links</b>
   - [ ] `<TryPage/>` which would link from the<b>"Try for Free"</b> and <b>"Get Started for free"</b> buttons
-  - [ ] `<About/>` which would link from the<b><About</b> link in the footer
-  - [ ] `<WhatWeDo/>` which would link from the <b>What We Do</b> link in the 
-  - [ ] `<FAQ/>` which would link from the <b>FAQ</b> link in the 
-  - [ ] `<Career/>` which would link from the <b>Career</b> link in the 
-  - [ ] `<Blog/>` which would link from the <b>Blog</b> link in the 
-  - [ ] `<Contact/>` which would link from the <b>Contact</b> link in the 
-- [ ] Use <b>Jest</b> testing framework to test <b>React</b> code
+  - [ ] `<About/>` which would link from the<b>About</b> link in the footer
+  - [ ] `<WhatWeDo/>` which would link from the <b>What We Do</b> link in the footer
+  - [ ] `<FAQ/>` which would link from the <b>FAQ</b> link in the footer
+  - [ ] `<Career/>` which would link from the <b>Career</b> link in the footer
+  - [ ] `<Blog/>` which would link from the <b>Blog</b> link in the footer
+  - [ ] `<Contact/>` which would link from the <b>Contact</b> link in the footer
+- [ ] Use <b>Jest</b> testing framework to add a few tests for the <b>React</b> code
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@Chanda-Abdul](https://www.frontendmentor.io/profile/Chanda-Abdul)
+- Website - [Chanda Codes](https://chandacodes.com/)
+- GitHub - [github.com/Chanda-Abdul](https://github.com/Chanda-Abdul)
