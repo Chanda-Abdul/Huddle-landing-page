@@ -72,8 +72,9 @@ I built this project to get more practice with <b>React</b> and <b>React Styled 
 
 - The main motivation for completing this project was to get more practice with [React Styled Components](https://styled-components.com/).  I feel very comfortable with [React Styled Components](https://styled-components.com/) at this point, it's a great way to organize <b>CSS</b> styling within <b>React</b>.
 
-- An <b>interesting snippet</b> of code from this project is the code that I used to <b>dynamically render</b> the <b>`<Card/>`content</b>. In Mobile view the `image` within the `<Card/>` is rendered on the top and the `text` is rendered underneath.  <i>But</i> on the <b>Desktop</b> view the `image` and the `text` are rendered on the same line, and alternate left/right positions within each `<Card/>` 
+- An <b>interesting snippet</b> of code from this project is the code that I used to <b>dynamically render</b> the `<Card/>`content. In Mobile view the `image` within the `<Card/>` is rendered on the top and the `text` is rendered underneath. <i>BUT</i> on the <b>Desktop</b> view the `image` and the `text` are rendered on the same line, and alternate left/right positions within each `<Card/>` 
   - So in `Card.styled.js` I used 
+
   ````
   @media (min-width: ${({ theme }) => theme.tablet}) {
       flex-direction: ${({ layout }) => layout || "row-reverse"};
@@ -81,6 +82,7 @@ I built this project to get more practice with <b>React</b> and <b>React Styled 
   }
   ````
   - and in `<Card/>` I alternated the `flex-direction` based on the card `id` using
+
   ````
   <StyledCard layout={id % 2 === 0 && "row"}>
   ````
@@ -89,7 +91,7 @@ I built this project to get more practice with <b>React</b> and <b>React Styled 
   <img src="./design/card.png" alt="" width="400"/>
 
 
-### Continued development
+## Continued development
 
 - [ ] Add <b>components</b> for all of the <b>links</b>
   - [ ] `<TryPage/>` which would link from the<b>"Try for Free"</b> and <b>"Get Started for free"</b> buttons
