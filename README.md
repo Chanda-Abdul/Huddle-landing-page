@@ -28,80 +28,68 @@ I built this project to practice React and React Styled Components.
 ### Users should be able to:
 
 - [x] View the optimal layout for each page depending on their device's screen size
-
-  - [x] Mobile @ <b>375px</b>
-  - [x] <b>Tablet</b> @ <b>768px</b>
-  - [x] Desktop <b>@ 1275px</b>
-
-    <img src="./design/desktop-design.jpg" alt="" width="300"/>
-
-     <img src="./design/desktop-preview.jpg" alt="" width="300"/>
-
+  - [x] <b>Mobile</b> @ 375px
+  - [x] <b>Tablet</b> @ 768px
+  - [x] <b>Desktop</b> @ 1275px
 - See <b>hover</b> states for all interactive elements throughout the site
-  - [x] <b>Button</b> background-color and transform updates on hover state
-  - [x] <b>Links</b> color updates on hover
+  - [x] <b>Button</b> `background-color` and `transform` updates on <b>hover</b>
+  - [x] <b>Links</b> `color` updates on <b>hover</b>
         
 ## Screenshots
 
 - Mobile @ <b>375px</b>
-  <img src="./design/mobile-design.jpg" alt="" width="300"/>
+
+<img src="./design/mobile-design.jpg" alt="" width="300"/>
 
 - Desktop @ <b>1275px</b>
- <img src="./design/desktop-design.jpg" alt="" width="300"/>
+
+<img src="./design/desktop-design.jpg" alt="" width="300"/>
  
 - <b>Hover States</b>
+
 <img src="./design/active-states.jpg" alt="" width="300"/>
-
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://distracted-davinci-033bd1.netlify.app/](https://distracted-davinci-033bd1.netlify.app/)
+- Solution URL: [View Solution here](https://www.frontendmentor.io/solutions/huddle-landing-page-using-react-react-styled-components-and-sass-e17B_UO4t)
+- Live Site URL: [View Live Site here](https://distracted-davinci-033bd1.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- Sass
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
+- <b>[React](https://reactjs.org/)</b> - JavaScript Framework
+- <b>[React Styled Components](https://styled-components.com/)</b> - For styles
+- Semantic <b>HTML5</b> markup
+- <b>Sass</b> 
+  - <b>CSS</b> custom properties
+  - <b>Flexbox</b>
+- <b>Mobile-first workflow</b>
+  - <b>Mobile</b> breakpoint: 375px
+  - <b>Tablet</b> beakpoint: 768px
+  - <b>Desktop</b> breakpoint: 1275px
+ 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- The main motivation for completing this project was to get more pracgice with RSC.  I feel very comfortable with RSC now.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+- An interesting snippet of code from this project is
+I dynamically rendered the card content. but on the desktop the image and the text would alternate positions with each card. So in `Card.styled.js`
+I used 
+````
+@media (min-width: ${({ theme }) => theme.tablet}) {
+    flex-direction: ${({ layout }) => layout || "row-reverse"};
+    ...
 }
-```
+````
+and in <Card/> alternated ` flex-direction` based on the card `id`
+````
+ <StyledCard layout={id % 2 === 0 && "row"}>
+````
+ To get this
+<img src="./design/card.png" alt="" width="300"/>
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
