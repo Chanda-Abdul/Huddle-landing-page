@@ -37,7 +37,7 @@ I built this project to practice React and React Styled Components.
         
 ## Screenshots
 
-- Mobile @ <b>375px</b>
+### - Mobile @ <b>375px</b>
 
 <img src="./design/mobile-design.jpg" alt="" width="300"/>
 
